@@ -1,12 +1,10 @@
 (() => {
-
   // 1 Asynchronous Function
   // function simulateAsync(text, timeout) {
   //   setTimeout(() => {
   //     console.log(text);
   //   }, timeout);
   // }
-
   // simulateAsync('Hello', 1000);
   // simulateAsync('World', 500);
   // simulateAsync('!', 100);
@@ -20,14 +18,12 @@
   //     }
   //   }, timeout);
   // }
-
-  // // aka Callback hell
+  // aka Callback hell
   // simulateAsync('Hello', 1000, () => {
   //   simulateAsync('World', 500, () => {
   //     simulateAsync('!', 500);
   //   });
   // });
-
 
   // 3 Promise
   // function simulateAsync(text, timeout, callback) {
