@@ -3,7 +3,7 @@
 
   function onVoicesChanged() {
     const voices = speechSynthesis.getVoices();
-    // console.log(voices);
+    console.log(voices);
 
     const thVoice = voices.find(voice => voice.lang === 'th-TH');
     message.voice = thVoice;
@@ -16,8 +16,8 @@
   }
 
   function run() {
-    speechSynthesis.addEventListener('voiceschanged', onVoicesChanged);
-
+    // speechSynthesis.addEventListener('voiceschanged', onVoicesChanged);
+    speechSynthesis.onvoiceschanged = onVoicesChanged();
     const imageElems = Array.from(document.querySelectorAll('img'));
     // console.log(imageElems);
     imageElems.forEach(imageElem => {
